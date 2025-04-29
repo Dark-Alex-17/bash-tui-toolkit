@@ -103,11 +103,10 @@ confirm() {
                echo -n 1
                           break
                                  ;;
-          n | N)
+          n | N | *)
                echo -n 0
                           break
                                  ;;
-          *) _cursor_to "${current_row}" ;;
         esac
     done
     echo -en "\033[0m" >&2
